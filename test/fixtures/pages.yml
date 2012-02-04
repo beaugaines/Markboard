@@ -1,0 +1,19 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  title: Page one
+  content: Page one
+  created_at: <%= 10.days.ago.to_s(:db) %>
+  updated_at: <%= 10.days.ago.to_s(:db) %>
+
+two:
+  title: Page two
+  content: Page two
+  created_at: <%= 5.days.ago.to_s(:db) %>
+  updated_at: <%= 5.days.ago.to_s(:db) %>
+
+three:
+  title: Page three
+  content: Page three
+  created_at: <%= 2.days.ago.to_s(:db) %>
+  updated_at: <%= 2.days.ago.to_s(:db) %>

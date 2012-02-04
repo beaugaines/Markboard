@@ -1,0 +1,10 @@
+<div class="page-header">
+	<h1><%= @page.title %></h1>
+</div>
+
+<%= raw @page.to_html %>
+
+<div class="form-actions">
+<%= link_to "Edit", edit_page_path(@page), :class => 'btn btn-primary' %>
+<%= link_to "Delete", page_path(@page), :method => "delete", :confirm => "Are you sure?", :class => 'btn btn-danger primary' %>
+</div>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Markboard</title>
+    <%= stylesheet_link_tag "application" %>
+    <%= javascript_include_tag "application" %>
+    <%= csrf_meta_tags %>
+  </head>
+
+  <body>
+
+    <%= render "shared/navbar" %>
+
+    <div class="container-fluid">
+      <div class="row-fluid">
+        <div class="span3">
+          <%= render "shared/sidebar" %>
+        </div><!--/span-->
+        <div class="span9">
+          <div class="row-fluid">
+            <%= yield %>
+          </div><!--/row-->
+        </div><!--/span-->
+      </div><!--/row-->
+
+      <hr>
+
+      <footer>
+        <p>&copy; Markboard 2012</p>
+      </footer>
+
+    </div><!--/.fluid-container-->
+
+  </body>
+</html>
+
