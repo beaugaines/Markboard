@@ -29,3 +29,8 @@ It's written in Ruby on Rails 3.2 and uses Twitter Bootstrap (http://twitter.git
 * Attach files to pages
 * Autogrow markdown editor
 * Dropbox integration
+
+### License
+Markboard is released under the MIT license:
+
+www.opensource.org/licenses/MIT
