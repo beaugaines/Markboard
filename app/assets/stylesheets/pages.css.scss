@@ -39,3 +39,19 @@
 	   font-weight: bold;
   }
 }
+
+.all-pages-actions {
+  display: block;
+}
+
+@media (max-width: 480px) {
+  .all-pages-actions {
+    display: none;
+  }
+}
+
+@media (max-width: 480px) {
+  .sidebar-nav {
+    display: none;
+  } 
+}

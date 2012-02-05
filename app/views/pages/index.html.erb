@@ -12,7 +12,7 @@
     <tr>
       <th>Title</th>
       <th>Last Update</th>
-      <th></th>
+      <th class="all-pages-actions"></th>
       </tr>
   </thead>
   <tbody>
@@ -20,7 +20,7 @@
       <tr>
         <td><strong><%= link_to page.title, page %></strong></td>
         <td><%= time_ago_in_words(page.updated_at) %> ago</td>
-        <td>
+        <td class="all-pages-actions">
           <%= link_to "Edit", edit_page_path(page), :class => 'btn btn-primary btn-small' %>
           <%= link_to "Delete", page_path(page), :method => "delete", :confirm => "Are you sure?", :class => 'btn btn-danger btn-small' %>
         </td>
