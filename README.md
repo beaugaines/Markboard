@@ -9,6 +9,7 @@ Markdown takes advantage of HTML 5 and CSS 3 to make it available on mobile phon
 If you don't know what Markdown is you can read about it here: http://daringfireball.net/projects/markdown/
 
 ## Installation on Heroku
+
 ```bash
   git clone git://github.com/ricny046/Markboard.git # Clone the repository
   cd Markboard 
@@ -17,7 +18,7 @@ If you don't know what Markdown is you can read about it here: http://daringfire
   git push heroku master # Pushes the code up to Heroku's servers
   heroku run rake db:migrate # Creates the database
   heroku open # Opens the application in your browser
-``
+```
 
 ## Geek stuff
 
