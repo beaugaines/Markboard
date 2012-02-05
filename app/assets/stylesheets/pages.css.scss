@@ -55,3 +55,12 @@
     display: none;
   } 
 }
+
+@media (max-width: 480px) {
+  .navbar .brand {
+    font-size: 14px;
+    padding-top:12px;
+    padding-left:0px;
+    margin-left:0px;
+  }
+}
