@@ -5,12 +5,8 @@ class PageTest < ActiveSupport::TestCase
   ### Validation
   test "save page without a title" do
   	page = Page.new
-  	assert !page.save
-  end
-
-  test "error message for blank title" do
-    page = Page.new
-    page.save
+  	
+    assert !page.save
     assert page.errors[:title].include?("can't be blank")
   end
 
@@ -18,14 +14,8 @@ class PageTest < ActiveSupport::TestCase
     page = Page.new
     title = "A very long title!!!"
     page.title = title + title + title + title + title + "!"
+    
     assert !page.save
-  end
-
-  test "error message for too long title" do
-    page = Page.new
-    title = "A very long title!!!"
-    page.title = title + title + title + title + title + "!"
-    page.save
     assert page.errors[:title].include?("is too long")
   end
 
@@ -50,24 +40,7 @@ class PageTest < ActiveSupport::TestCase
     page.content = lol + "!"
 
     assert page.invalid?
-  end
-
-  test "error message for too long content" do
-    page = Page.new
-    
-    content = "01234567890123456789012345678901234567890123456789012345678901234567890123456789"
-    lol = ""
-    
-    1250.times do
-      lol = lol + content
-    end
-
-    page.content = lol + "!"
-
-    page.save
-    
     assert page.errors[:content].include?("is too long")
-      
   end
 
   ### Content rendering
