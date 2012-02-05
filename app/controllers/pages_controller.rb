@@ -1,10 +1,15 @@
 class PagesController < ApplicationController
 
+  before_filter do |controller|
+    controller.instance_eval do
+      @recent_pages = Page.recent_pages
+    end
+  end
+
   # GET /pages
   # GET /pages.json
   def index
     @pages = Page.all_pages
-    @recent_pages = Page.recent_pages
     respond_to do |format|
       format.html # index.html.erb
       format.json { render json: @pages }
@@ -15,7 +20,6 @@ class PagesController < ApplicationController
   # GET /pages/1.json
   def show
     @page = Page.find(params[:id])
-    @recent_pages = Page.recent_pages
     respond_to do |format|
       format.html # show.html.erb
       format.json { render json: @page }
@@ -26,7 +30,6 @@ class PagesController < ApplicationController
   # GET /pages/new.json
   def new
     @page = Page.new
-    @recent_pages = Page.recent_pages
     respond_to do |format|
       format.html # new.html.erb
       format.json { render json: @page }
@@ -35,7 +38,6 @@ class PagesController < ApplicationController
 
   # GET /pages/1/edit
   def edit
-    @recent_pages = Page.recent_pages
     @page = Page.find(params[:id])
   end
 
