@@ -4,6 +4,4 @@
 
 $ ->
   input_title = $('#page_title')
-  input_title.val('Give the page a title') if input_title.val().length == 0
-  input_title.focus()
-  input_title.select()
+  input_title.focus() if input_title?
