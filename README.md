@@ -9,18 +9,22 @@ Markdown takes advantage of HTML 5 and CSS 3 to make it available on mobile phon
 If you don't know what Markdown is you can read about it here: http://daringfireball.net/projects/markdown/
 
 ### Installation on Heroku
-
-1. git clone git://github.com/ricny046/Markboard.git
-2. cd Markboard
-3. gem install heroku
-4. heroku create --stack cedar
-5. git push heroku master
+```bash
+  git clone git://github.com/ricny046/Markboard.git # Clone the repository
+  cd Markboard 
+  gem install heroku # Installs the Heroku command line tool
+  heroku create --stack cedar (The cedar stack must be used) # Adds Markboard to Heroku
+  git push heroku master # Pushes the code up to Heroku's servers
+  heroku run rake db:migrate # Creates the database
+  heroku open # Opens the application in your browser
+```
 
 ### Geek stuff
 
 It's written in Ruby on Rails 3.2 and uses Twitter Bootstrap (http://twitter.github.com/bootstrap/)
 
 ### Upcoming features
+
 * Authenticaton
 * Versioning & diff
 * Sharing (via e-mail & public url)
@@ -31,6 +35,7 @@ It's written in Ruby on Rails 3.2 and uses Twitter Bootstrap (http://twitter.git
 * Dropbox integration
 
 ### License
+
 Markboard is released under the MIT license:
 
 www.opensource.org/licenses/MIT
