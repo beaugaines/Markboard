@@ -4,7 +4,7 @@ Markboard is a *very* simple web app developed to manage notes written in markdo
 
 I wrote this little app because I was tired of having text files with notes spread around on many different computers and devices. So I wrote this application to centralize my notes in one place.
 
-Markdown takes advantage of HTML 5 and CSS 3 to make it available on mobile phones, tablets and desktop computers.
+Markboard takes advantage of HTML 5 and CSS 3 to make it available on mobile phones, tablets and desktop computers.
 
 If you don't know what Markdown is you can read about it here: http://daringfireball.net/projects/markdown/
 
