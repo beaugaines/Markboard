@@ -10,15 +10,15 @@ If you don't know what Markdown is you can read about it here: http://daringfire
 
 ### Installation on Heroku
 
-Fill in some stuff here: http://www.heroku.com
-
-### Local installation
-
-bundle install and all that
+1. git clone git://github.com/ricny046/Markboard.git
+2. cd Markboard
+3. gem install heroku
+4. heroku create --stack cedar
+5. git push heroku master
 
 ### Geek stuff
 
-It's written in Ruby on Rails 3.2.1 and uses Twitter Bootstrap
+It's written in Ruby on Rails 3.2 and uses Twitter Bootstrap (http://twitter.github.com/bootstrap/)
 
 ### Upcoming features
 * Authenticaton
