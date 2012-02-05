@@ -8,6 +8,7 @@ Markdown takes advantage of HTML 5 and CSS 3 to make it available on mobile phon
 
 If you don't know what Markdown is you can read about it here: http://daringfireball.net/projects/markdown/
 
+## Screenshots
 ### Mobile
 <div class="thumbnail"><a href="https://skitch.com/richard.nystrom/g6573/mobile"><img src="https://img.skitch.com/20120205-jj7ukdp18mn4p8sr48r1wkps46.preview.jpg" alt="mobile" /></a><br /></div>
 
