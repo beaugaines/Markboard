@@ -3,7 +3,7 @@ class PagesController < ApplicationController
   # GET /pages
   # GET /pages.json
   def index
-    @pages = Page.all
+    @pages = Page.all_pages
     @recent_pages = Page.recent_pages
     respond_to do |format|
       format.html # index.html.erb

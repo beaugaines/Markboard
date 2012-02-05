@@ -9,6 +9,10 @@ class Page < ActiveRecord::Base
   end
 
   def self.recent_pages
-    Page.order("created_at DESC").limit(20).select("id,title")
+    Page.order("created_at DESC").limit(20).select("id, title")
+  end
+
+  def self.all_pages
+    Page.order("updated_at DESC").select("id, title, updated_at")
   end
 end

@@ -105,5 +105,13 @@ class PageTest < ActiveSupport::TestCase
     assert_equal recent_pages.first.title, "Page three"
     assert_equal recent_pages.last.title, "Page one"
   end
+
+  ### all pages
+  test "all pages" do
+    all_pages = Page.all_pages
+
+    assert_equal all_pages.first.title, "Page three"
+    assert_equal all_pages.last.title, "Page one"
+  end
   
 end
